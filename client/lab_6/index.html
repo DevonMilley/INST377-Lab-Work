@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Devon Milley Lab 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+    <header class='header-container'>
+        <div class="header">
+      <h1>Devon Milley's Lab 5</h1>
+    </div>
+    </header>
+    <div class="container">
+    <form method='get' class='contact-form'>
+        <div class='form-row'>
+            <label for='first-name'>First Name</label>
+            <input id='first-name' name='first-name' type='text'/>
+          </div>
+          <div class='form-row'>
+            <label for='food-pref'>Food Preference</label>
+            <input id='food-pref' name='food-pref' type='text'/>
+          </div>
+          <fieldset class='legacy-form-row'>
+            <legend>Veggie or Vegan?</legend>
+            <input id='talk-type-1'
+                   name='talk-type'
+                   type='radio'
+                   value='main-stage' />
+            <label for='talk-type-1' class='radio-label'>Veggie</label>
+            <input id='talk-type-2'
+                   name='talk-type'
+                   type='radio'
+                   value='workshop'
+                   checked />
+            <label for='talk-type-2' class='radio-label'>Vegan</label>
+          </fieldset>
+          <div class='form-row'>
+            <button>Submit</button>
+          </div>
+    </form>
+    <div class="text-box">
+        <p>This is going to be something in two weeks.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
