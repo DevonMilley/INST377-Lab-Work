@@ -3,6 +3,8 @@ sync function dataHandler(array) {
   }
   async function mainEvent() { // the async keyword means we can make API requests
     const form = document.querySelector('.main_form');
+    const form = document.querySelector('restaurant-name');
+    const form = document.querySelector('food-pref')
     form.addEventListener('submit', async (submitEvent).style.display = "none" => { // async has to be declared all the way to get an await
       const results = await fetch('/api/foodServicesPG'); // This accesses some data from our API
       const arrayFromJson = await results.json(); // This changes it into data we can use - an object
